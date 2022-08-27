@@ -1,0 +1,67 @@
+Linux mint in Virtual Box
+
+bidirectional clipboard
+bidirectional drag n drop
+
+
+---
+IMPORTANT STUFF
+apt is a subset of apt-get
+
+
+
+
+---
+
+select nearest mirror 
+
+vbox guest addition
+
+$ sudo apt update
+$ sudo apt upgrade
+$ sudo apt install build-essential module-assistant
+$ sudo m-a prepare
+
+now run the guest addition
+---
+
+1. Wine and snap(read snap store)
+
+$ sudo apt-get install wine
+$ 
+
+
+2. VS code
+download .deb
+$ sudo apt install ./code.1.69.420.tsrntknsreikt.deb
+
+
+3. snap store (you need wine)
+
+$ sudo rm /etc/apt/preferences.d/nosnap.pref
+$ sudo apt update
+$ sudo apt-get install snapd
+
+$ sudo snap install snap-store
+
+
+4. Auto-complete
+$ sudo apt install --reinstall bash-completion
+
+5. tmux
+$ sudo apt-get install tmux
+
+6. clang (make sure gcc and g++ exist)
+$ sudo apt-get install clang
+
+7. cmatrix
+$ sudo apt-get install cmatrix
+
+8. git
+$ sudo apt install git
+
+9. most pages (add color to your bash)
+$ sudo apt-get install most
+
+add the following to bashrc
+export PAGER=“most” 
