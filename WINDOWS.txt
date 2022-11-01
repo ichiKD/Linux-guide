@@ -1,0 +1,32 @@
+Windows 10
+
+---
+1. install vs code
+2. install pbox (codeforces packet manager)
+		pbox autometically downloads Java/JRE
+3. use pbox to install gcc/g++ , clang(LLVM) and notepad++
+4. install python IDLE
+5. setup boost, at coder library
+6. install git
+7. install wsl
+---
+VS code
+1. install C/C++ extension
+2. install C/C++ extension pack extension
+3. install Coderunner extension
+4. install Overtype extension
+
+---
+WSL
+   $ wsl --install
+   $ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+   $ wsl.exe --status
+   $ install ubuntu or kali linux from Microsoft Store
+   $ ubuntu
+---
+add path 
+
+C:\Programs\LLVM\bin
+C:\Programs\gcc11-64-winlibs\bin
+
+---
