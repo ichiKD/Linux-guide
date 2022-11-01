@@ -35,8 +35,13 @@ $
 download .deb
 $ sudo apt install ./code.1.69.420.tsrntknsreikt.deb
 
+3. Notepad++ 
+Bad
+sudo snap install notepad-plus-plus
+Good
+sudo apt-get install notepadqq
 
-3. snap store (you need wine)
+4. snap store (you need wine)
 
 $ sudo rm /etc/apt/preferences.d/nosnap.pref
 $ sudo apt update
@@ -45,23 +50,28 @@ $ sudo apt-get install snapd
 $ sudo snap install snap-store
 
 
-4. Auto-complete
+5. Auto-complete
 $ sudo apt install --reinstall bash-completion
 
-5. tmux
+6. tmux
 $ sudo apt-get install tmux
 
-6. clang (make sure gcc and g++ exist)
+7. clang (make sure gcc and g++ exist)
 $ sudo apt-get install clang
 
-7. cmatrix
+8. cmatrix
 $ sudo apt-get install cmatrix
 
-8. git
+9. git
 $ sudo apt install git
 
-9. most pages (add color to your bash)
+10. most pages (add color to your bash)
 $ sudo apt-get install most
 
 add the following to bashrc
 export PAGER=“most” 
+---
+
+HOW TO INCREASE SIZE OF A FIXED SIZE VM ?
+watch this video
+https://www.youtube.com/watch?v=ikSIDI535L0
