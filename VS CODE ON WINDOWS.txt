@@ -1,0 +1,74 @@
+VS CODE on WINDOWS 10
+---------
+
+A. C/C++
+----
+
+pbox
+---
+
+1. go to http://pbox.me/ and get the shell command that downloads
+and installs the pbox
+$ @powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('http://repo.pbox.me/files/i.ps1'))" && set PATH=%PATH%;%ALLUSERSPROFILE%\pbox
+
+
+
+gcc/g++: First you have to add a compiler to your computer
+---
+
+1. go to http://pbox.me/packages and find gcc11-64-winlibs
+$ pbox install gcc11-64-winlibs
+
+2. add the "C:\Programs\gcc11-64-winlibs\bin" in you environment variable 'path'
+This includes the compiler and all the header library 
+
+Note: <bits/stdc++.h> is not a standard library and probably won't work on clang++
+SEE : https://codeforces.com/blog/entry/18274
+SEE : https://codeforces.com/blog/entry/96040
+SEE : https://winlibs.com/
+
+
+
+B. VS CODE SETTINGS CONFIGURATION
+----
+ADD all the necessary extensions 
+see extensions seciton
+
+
+C/C++
+---
+1. OPEN FOLDER with VS CODE, this will form a .vscode in your folder
+2. You add "C:/Programs/gcc11-64-winlibs/bin" to c_cpp_properties.json in .vscode 
+[To set up include path properly you must add "C:/Programs/gcc11-64-winlibs/bin" to your include path]
+
+Everything should work now for c/c++
+
+
+
+C. PYTHON
+----
+1. go to https://www.python.org/
+2. download the latest python.exe for your system
+3. setup python by running python.exe and doing what is says
+4. add the necessary extensions in vs code
+
+Everything should work now for PYTHON
+
+
+
+D. VS CODE EXTENSIONS
+----
+1. C/C++
+2. C/C++ Extension Pack
+3. C/C++ Themes (Dark+ v2 theme is the best)
+4. CMake
+5. CMake Tools
+6. Code Runner
+7. Jupyter
+8. Jupyter Cell Tags
+9. Jupyter Keymap
+10. Jupyter Notebook Renderers
+11. Jupyter Slide Show
+12. Overtype
+13. Pylance
+14. Python
